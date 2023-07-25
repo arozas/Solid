@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Single Responsibility Principle (SRP)</h1>
 
 <p align="center">
-  <img src="https://example.com/path/to/image.png" alt="SRP Image">
+  <img src="https://github.com/arozas/Solid/blob/main/img/single-responsibility-principle-on-different-levels-of-abstraction.jpg" alt="SRP Image">
 </p>
 
 ## Resumen
@@ -82,9 +82,49 @@ El enfoque claro y coherente de cada clase facilita la documentación del códig
 
 El SRP no se limita solo a clases, sino que también se aplica a métodos o funciones dentro de una clase. Cada método debe tener una única responsabilidad y llevar a cabo una tarea específica. Si un método realiza múltiples tareas, puede ser dividido en métodos más pequeños y cohesivos.
 
+La aplicación del Principio de Responsabilidad Única (SRP) a métodos y clases es fundamental para mantener un código limpio, estructurado y fácil de mantener. Si bien el SRP se enfoca principalmente en las clases, también es esencial aplicarlo a nivel de métodos o funciones dentro de una clase. Esto implica que cada método debe tener una única responsabilidad y llevar a cabo una tarea específica. A continuación, se detallan las razones por las cuales aplicar el SRP a métodos y clases es importante:
+
+1. **Cohesión y claridad:**
+   Al aplicar el SRP a métodos, se logra una mayor cohesión en el código, lo que significa que cada método se enfoca en realizar una única tarea y su funcionalidad está bien definida. Esto mejora la claridad del código, ya que se vuelve más fácil de entender qué hace cada método, lo que facilita el mantenimiento y la colaboración en equipo.
+
+2. **Mantenimiento y reutilización:**
+   Métodos con una única responsabilidad son más fáciles de mantener y modificar en el futuro. Si un método realiza múltiples tareas y se necesita cambiar una de ellas, puede afectar el funcionamiento de las demás. En cambio, al tener métodos más pequeños y cohesivos, los cambios se pueden realizar con mayor seguridad, sin afectar otras partes del código. Además, la modularidad que aporta el SRP permite que los métodos con responsabilidades únicas puedan ser reutilizados en diferentes partes del código. Estos métodos se convierten en bloques de construcción más pequeños y flexibles que pueden ser llamados desde diversas ubicaciones, lo que promueve la reutilización de código y evita la duplicación.
+
+3. **Pruebas unitarias más efectivas:**
+   Cuando los métodos tienen una única responsabilidad, se vuelven más fáciles de probar mediante pruebas unitarias. Las pruebas unitarias se centran en probar el comportamiento específico de un método, aislando esa funcionalidad particular. Esto hace que las pruebas sean más efectivas y proporciona una mayor confianza en la calidad del código.
+
+4. **Facilitar el diseño orientado a objetos:**
+   Aplicar el SRP a métodos y clases es esencial para seguir los principios de diseño orientado a objetos. La cohesión y la encapsulación de responsabilidades en clases y métodos bien definidos contribuyen a crear un diseño modular y escalable.
+
+5. **Mejor legibilidad y mantenibilidad:**
+   El SRP en métodos y clases conduce a un código más claro y conciso. Cuando cada método realiza una tarea específica, el código se vuelve más fácil de leer y comprender. Esto es especialmente útil cuando varios desarrolladores trabajan en el mismo proyecto, ya que facilita la comprensión del código de los demás y agiliza el proceso de revisión y mantenimiento.
+
+6. **Evitar efectos secundarios:**
+   Si un método realiza múltiples tareas, puede tener efectos secundarios no deseados en otras partes del código. Por ejemplo, puede modificar variables o estados que afecten el comportamiento de otros métodos. Al aplicar el SRP, se reduce el riesgo de efectos secundarios y se aísla el impacto de los cambios dentro de un método específico.
+
 ## Flexibilidad y extensibilidad
 
 Al seguir el SRP, el código se vuelve más flexible y extensible. Cuando se necesita agregar nuevas funcionalidades, se pueden crear nuevas clases o módulos con responsabilidades adicionales sin tener que modificar las clases existentes. Esto evita el riesgo de introducir errores y efectos secundarios en el código existente.
+
+La flexibilidad y extensibilidad son beneficios clave que se obtienen al seguir el Principio de Responsabilidad Única (SRP) en el diseño de software. Al tener clases con una única responsabilidad, el código se vuelve más adaptable y abierto a cambios sin afectar otras partes del sistema. A continuación, se explora en detalle cómo el SRP mejora la flexibilidad y extensibilidad del código:
+
+1. **Adaptabilidad a nuevos requerimientos:**
+Cuando se necesita agregar nuevas funcionalidades o modificar el comportamiento de una aplicación, el SRP permite hacerlo de forma más sencilla. Al tener clases con responsabilidades específicas, es posible crear nuevas clases o módulos para abordar los nuevos requerimientos sin modificar las clases existentes. Esto significa que se puede extender la funcionalidad del sistema sin arriesgarse a alterar funcionalidades previamente funcionales.
+
+2. **Reducción del acoplamiento:**
+El acoplamiento entre clases puede ser problemático cuando se realizan cambios en una parte del código que afectan a otras partes. Al seguir el SRP y tener clases con responsabilidades separadas, se disminuye el riesgo de que los cambios en una clase afecten negativamente a otras. Esto resulta en un sistema menos acoplado y más fácil de mantener y extender.
+
+3. **Pruebas y verificación más precisas:**
+Con clases bien definidas y con responsabilidades únicas, las pruebas unitarias pueden enfocarse en verificar el comportamiento específico de cada clase. Esto facilita la identificación de errores y asegura que cada clase cumpla con su tarea correctamente. Las pruebas unitarias proporcionan una mayor confianza en la calidad del software y evitan la propagación de errores a través de la aplicación.
+
+4. **Módulos independientes y reutilizables:**
+El SRP promueve la creación de módulos independientes y cohesivos, lo que facilita la reutilización de clases en diferentes partes del sistema o incluso en otros proyectos. Estas clases bien definidas pueden ser extraídas y utilizadas en distintos contextos, lo que ahorra tiempo y esfuerzo al no tener que reimplementar funcionalidades similares en múltiples lugares.
+
+5. **Evolución continua del código:**
+Los sistemas de software no son estáticos; están sujetos a cambios y mejoras continuas. Al seguir el SRP, el código es más fácil de mantener y evolucionar a lo largo del tiempo. La introducción de nuevas características o la corrección de errores se convierte en un proceso más predecible y menos propenso a causar regresiones en otras partes del sistema.
+
+6. **Mejora de la colaboración en equipos de desarrollo:**
+En proyectos colaborativos, el SRP facilita el trabajo en equipo al dividir las responsabilidades entre distintos miembros. Cada desarrollador puede enfocarse en implementar una clase específica sin interferir en el trabajo de los demás. Esto reduce conflictos en el código y agiliza el proceso de desarrollo.
 
 ## Relación con otros principios SOLID
 
