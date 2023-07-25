@@ -4,6 +4,9 @@
   <img src="https://github.com/arozas/Solid/blob/main/img/single-responsibility-principle-on-different-levels-of-abstraction.jpg" alt="SRP Image">
 </p>
 
+>"SRP es uno de los conceptos más importantes en el diseño orientado a objetos. También es uno de los conceptos más simples de comprender y seguir. Sin embargo, curiosamente, SRP suele ser el principio de diseño de clases más abusado."\
+> — Robert C. Martin
+
 ## Resumen
 
 El SRP es uno de los cinco principios SOLID y establece que una clase debe tener una única responsabilidad, es decir, una razón para cambiar. Esto implica que cada clase debe enfocarse en realizar una sola tarea o funcionalidad, lo que conduce a un código más cohesivo, fácil de mantener, extensible y menos propenso a errores.
@@ -72,10 +75,10 @@ Las clases con una sola responsabilidad son más fáciles de reutilizar en difer
 4. **Facilita las pruebas unitarias:** 
 La Separación de Intereses favorece la escritura de pruebas unitarias más específicas y aisladas. Cada clase se puede probar de manera individual sin preocuparse por el impacto de otras funcionalidades.
 
-6. **Flexibilidad y evolución del sistema:** 
+5. **Flexibilidad y evolución del sistema:** 
 Al mantener responsabilidades separadas, el sistema se vuelve más flexible y escalable. Agregar nuevas funcionalidades o realizar cambios en una parte del sistema no afectará a otras áreas no relacionadas.
 
-7. **Mejora la legibilidad y la documentación:** 
+6. **Mejora la legibilidad y la documentación:** 
 El enfoque claro y coherente de cada clase facilita la documentación del código y mejora su legibilidad para los desarrolladores que se unen al proyecto más adelante.
 
 ## Aplicación a métodos y clases
