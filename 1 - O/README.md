@@ -21,7 +21,7 @@ El OCP se fundamenta en el deseo de evitar que los cambios realizados en una par
 ## Tabla de Contenidos
 - [La necesidad del OCP](#la-necesidad-del-ocp)
 - [Extensión](#extensión)
-- [Aplicación a métodos y clases](#aplicación-a-métodos-y-clases)
+- [Cerrado para modificación](#cerrado-para-modificación)
 - [Flexibilidad y extensibilidad](#flexibilidad-y-extensibilidad)
 - [Relación con otros principios SOLID](#relación-con-otros-principios-solid)
 - [El principio SRP se puede entender y aplicar mediante los siguientes puntos](#el-principio-srp-se-puede-entender-y-aplicar-mediante-los-siguientes-puntos)
@@ -61,7 +61,6 @@ El OCP es necesario para enfrentar los desafíos del desarrollo de software en u
 
 La extensión implica agregar nuevas funcionalidades o características al software sin cambiar el código existente. Esto se logra mediante la creación de nuevas clases, interfaces, métodos o módulos que se integren con el código existente. Las extensiones permiten que el software evolucione para adaptarse a nuevos requerimientos o escenarios sin poner en riesgo su funcionamiento previo.
 
-
 En el contexto del Principio de Abierto-Cerrado (OCP), la "extensión" se refiere a la capacidad de agregar nuevas funcionalidades o características a un sistema de software existente sin modificar el código fuente de las clases o módulos existentes. La extensión es una parte fundamental del OCP, ya que permite que el software evolucione y se adapte a cambios futuros sin romper el funcionamiento de las partes ya existentes.
 
 Para lograr la extensibilidad en OCP, es necesario seguir ciertas prácticas y utilizar patrones de diseño que permitan agregar nuevas funcionalidades sin afectar el código existente. Aquí hay algunas técnicas y conceptos relevantes relacionados con la extensión en OCP:
@@ -83,29 +82,29 @@ Para lograr la extensibilidad en OCP, es necesario seguir ciertas prácticas y u
 ### Resumen:
 La extensión en el Principio de Abierto-Cerrado es una práctica esencial que permite que el software se adapte a cambios futuros sin modificar el código existente. Utilizando interfaces, clases abstractas, inversión de dependencias y patrones de diseño adecuados, los desarrolladores pueden diseñar sistemas flexibles, escalables y fáciles de mantener, promoviendo así una arquitectura de software sólida y de alta calidad.
 
-## Aplicación a métodos y clases
+## Cerrado para modificación
 
-El SRP no se limita solo a clases, sino que también se aplica a métodos o funciones dentro de una clase. Cada método debe tener una única responsabilidad y llevar a cabo una tarea específica. Si un método realiza múltiples tareas, puede ser dividido en métodos más pequeños y cohesivos.
+Una vez que un componente de software ha sido desarrollado, probado y puesto en producción, su comportamiento y lógica interna no deben ser modificados directamente para incorporar nuevos requisitos o cambios en el sistema. Esta es otra parte esencial del OCP y se basa en la premisa de que cambiar el código existente puede introducir errores, afectar la estabilidad del sistema y crear efectos secundarios no deseados.
 
-La aplicación del Principio de Responsabilidad Única (SRP) a métodos y clases es fundamental para mantener un código limpio, estructurado y fácil de mantener. Si bien el SRP se enfoca principalmente en las clases, también es esencial aplicarlo a nivel de métodos o funciones dentro de una clase. Esto implica que cada método debe tener una única responsabilidad y llevar a cabo una tarea específica. A continuación, se detallan las razones por las cuales aplicar el SRP a métodos y clases es importante:
+Para lograr el "cerrado para modificación" en OCP, es importante seguir ciertas prácticas y principios de diseño que eviten la necesidad de cambiar el código existente:
 
-1. **Cohesión y claridad:**
-   Al aplicar el SRP a métodos, se logra una mayor cohesión en el código, lo que significa que cada método se enfoca en realizar una única tarea y su funcionalidad está bien definida. Esto mejora la claridad del código, ya que se vuelve más fácil de entender qué hace cada método, lo que facilita el mantenimiento y la colaboración en equipo.
+1. **Interfaces estables:** Las interfaces, que definen la forma en que se comunican diferentes componentes del sistema, deben ser diseñadas cuidadosamente y mantenerse estables. Esto significa que una vez que una interfaz ha sido establecida y utilizada por otras partes del sistema, no debe cambiar su firma o comportamiento. Si las interfaces cambian constantemente, las clases que las implementan se verán afectadas y requerirán modificaciones, lo que contradice el "cerrado para modificación".
 
-2. **Mantenimiento y reutilización:**
-   Métodos con una única responsabilidad son más fáciles de mantener y modificar en el futuro. Si un método realiza múltiples tareas y se necesita cambiar una de ellas, puede afectar el funcionamiento de las demás. En cambio, al tener métodos más pequeños y cohesivos, los cambios se pueden realizar con mayor seguridad, sin afectar otras partes del código. Además, la modularidad que aporta el SRP permite que los métodos con responsabilidades únicas puedan ser reutilizados en diferentes partes del código. Estos métodos se convierten en bloques de construcción más pequeños y flexibles que pueden ser llamados desde diversas ubicaciones, lo que promueve la reutilización de código y evita la duplicación.
 
-3. **Pruebas unitarias más efectivas:**
-   Cuando los métodos tienen una única responsabilidad, se vuelven más fáciles de probar mediante pruebas unitarias. Las pruebas unitarias se centran en probar el comportamiento específico de un método, aislando esa funcionalidad particular. Esto hace que las pruebas sean más efectivas y proporciona una mayor confianza en la calidad del código.
+2. **Encapsulación y ocultamiento de información:** Un principio importante en el desarrollo de software es la encapsulación, que implica ocultar los detalles internos de una clase y proporcionar una interfaz pública coherente y estable. Al mantener la información oculta y proporcionar métodos de acceso controlado, se evita la necesidad de cambiar el código existente que depende de esa clase interna.
 
-4. **Facilitar el diseño orientado a objetos:**
-   Aplicar el SRP a métodos y clases es esencial para seguir los principios de diseño orientado a objetos. La cohesión y la encapsulación de responsabilidades en clases y métodos bien definidos contribuyen a crear un diseño modular y escalable.
 
-5. **Mejor legibilidad y mantenibilidad:**
-   El SRP en métodos y clases conduce a un código más claro y conciso. Cuando cada método realiza una tarea específica, el código se vuelve más fácil de leer y comprender. Esto es especialmente útil cuando varios desarrolladores trabajan en el mismo proyecto, ya que facilita la comprensión del código de los demás y agiliza el proceso de revisión y mantenimiento.
+3. **Uso de clases y módulos bien definidos:** Dividir el sistema en clases y módulos cohesivos y bien definidos facilita el "cerrado para modificación". Si una clase o módulo tiene una única responsabilidad y no tiene acoplamiento innecesario con otras partes del sistema, será menos probable que un cambio en una parte afecte a otras partes.
 
-6. **Evitar efectos secundarios:**
-   Si un método realiza múltiples tareas, puede tener efectos secundarios no deseados en otras partes del código. Por ejemplo, puede modificar variables o estados que afecten el comportamiento de otros métodos. Al aplicar el SRP, se reduce el riesgo de efectos secundarios y se aísla el impacto de los cambios dentro de un método específico.
+
+4. **Pruebas unitarias:** La implementación de pruebas unitarias sólidas permite detectar errores antes de que el código entre en producción. Al asegurarse de que el código existente funcione correctamente antes de introducir nuevos cambios, se reduce el riesgo de introducir errores mediante modificaciones directas.
+
+
+5. **Versionado y control de código:** Utilizar sistemas de control de versiones, como Git, permite rastrear cambios y revertir modificaciones si es necesario. También se pueden usar etiquetas y ramas para gestionar diferentes versiones del software, lo que ayuda a mantener el "cerrado para modificación" en las versiones estables.
+
+### Resumen:
+El Principio de Abierto-Cerrado implica mantener la estabilidad del código existente y evitar cambios directos en su lógica y comportamiento. Al seguir prácticas de diseño sólidas, utilizar interfaces estables, encapsulación adecuada y pruebas unitarias, los desarrolladores pueden asegurarse de que el software se mantenga confiable y estable con el tiempo, lo que facilita la extensión sin comprometer la integridad del sistema.
+
 
 ## Flexibilidad y extensibilidad
 
