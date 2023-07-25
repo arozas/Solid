@@ -52,6 +52,30 @@ Al seguir el SRP, se mejora la modularidad del software, lo que permite a los de
 
 El SRP promueve la separación de intereses y la modularidad en el diseño del software. Cada módulo o clase debe enfocarse en un único aspecto o tarea, lo que permite que el código sea más claro, conciso y fácil de entender. Además, al mantener responsabilidades separadas, se facilita la evolución del sistema, ya que los cambios en una parte del código no afectarán a otras áreas no relacionadas.
 
+La Separación de Intereses es un concepto clave dentro del Principio de Responsabilidad Única (SRP) que busca promover la claridad y la modularidad en el diseño del software. Este principio sugiere que cada módulo o clase debe tener un único enfoque o responsabilidad, lo que significa que debe abordar una única tarea o aspecto del sistema.
+
+Cuando aplicamos la Separación de Intereses, evitamos que una clase realice múltiples tareas no relacionadas. En lugar de tener una clase grande y compleja que abarque diversas funcionalidades, dividimos esas responsabilidades en clases separadas, cada una de las cuales se centra en una tarea específica. De esta manera, cada clase puede ser más concisa, coherente y fácil de entender.
+
+### Ventajas de la Separación de Intereses:
+
+#### Claridad y comprensión del código: 
+l tener clases enfocadas en una sola tarea, el código se vuelve más claro y fácil de entender para los desarrolladores. Esto permite una mejor comunicación dentro del equipo de desarrollo y facilita la colaboración.
+
+#### Facilidad de mantenimiento: 
+Cuando cada clase tiene una única responsabilidad, los cambios y actualizaciones en el sistema se vuelven más sencillos de implementar. El código se vuelve más predecible y se minimizan los efectos secundarios en otras partes del sistema.
+
+#### Reutilización de código: 
+Las clases con una sola responsabilidad son más fáciles de reutilizar en diferentes partes del sistema o en otros proyectos. Esto mejora la productividad y evita duplicar código.
+
+#### Facilita las pruebas unitarias: 
+La Separación de Intereses favorece la escritura de pruebas unitarias más específicas y aisladas. Cada clase se puede probar de manera individual sin preocuparse por el impacto de otras funcionalidades.
+
+#### Flexibilidad y evolución del sistema: 
+Al mantener responsabilidades separadas, el sistema se vuelve más flexible y escalable. Agregar nuevas funcionalidades o realizar cambios en una parte del sistema no afectará a otras áreas no relacionadas.
+
+#### Mejora la legibilidad y la documentación: 
+El enfoque claro y coherente de cada clase facilita la documentación del código y mejora su legibilidad para los desarrolladores que se unen al proyecto más adelante.
+
 ## Aplicación a métodos y clases
 
 El SRP no se limita solo a clases, sino que también se aplica a métodos o funciones dentro de una clase. Cada método debe tener una única responsabilidad y llevar a cabo una tarea específica. Si un método realiza múltiples tareas, puede ser dividido en métodos más pequeños y cohesivos.
