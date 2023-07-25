@@ -25,22 +25,24 @@ El SRP también se relaciona con otros principios SOLID, como el Principio de Ab
 
 El principio SRP aborda uno de los problemas fundamentales en el diseño de software: el código monolítico y sobrecargado. Si una clase tiene múltiples responsabilidades, esto puede llevar a una serie de problemas, como una mayor complejidad, dificultad para mantener el código, acoplamiento excesivo, dificultades para realizar pruebas unitarias y la propagación de cambios no deseados en el código. Estos problemas se acentúan a medida que el tamaño y la complejidad del software crecen.
 
-### Código monolítico y sobrecargado: 
+### Las Desventajas del no aplicar SRP:
+
+1. **Código monolítico y sobrecargado:** 
 Si una clase tiene múltiples responsabilidades, su código tiende a volverse monolítico y sobrecargado. Esto significa que la clase realiza muchas tareas diferentes y puede ser difícil de entender, ya que su funcionalidad está dispersa por todo el código. Un código monolítico puede ser más complicado de mantener y modificar, lo que dificulta la evolución del software.
 
-### Complejidad y falta de cohesión: 
+2. **Complejidad y falta de cohesión:** 
 Las clases con múltiples responsabilidades pueden volverse complejas y tener una baja cohesión. La cohesión se refiere a la relación entre los miembros de una clase y cómo trabajan juntos para lograr un objetivo común. Cuando una clase tiene demasiadas responsabilidades, sus métodos y atributos pueden perder su relación lógica, lo que complica la comprensión del código.
 
-### Dificultad para mantener el código: 
+3. **Dificultad para mantener el código:** 
 Un código con múltiples responsabilidades puede ser difícil de mantener debido a la falta de claridad y estructura. Los desarrolladores pueden encontrar desafíos al intentar realizar cambios o corregir errores, ya que cualquier modificación podría afectar a múltiples aspectos del sistema.
 
-### Acoplamiento excesivo: 
+4. **Acoplamiento excesivo:** 
 El acoplamiento es la dependencia entre distintas partes del código. Si una clase tiene múltiples responsabilidades, es probable que esté altamente acoplada con otras clases o módulos del sistema. El acoplamiento excesivo puede dificultar los cambios, ya que una modificación en una parte del código puede tener efectos secundarios no deseados en otras partes.
 
-### Dificultades en las pruebas unitarias:
+5. **Dificultades en las pruebas unitarias:**
 Las pruebas unitarias son esenciales para garantizar la calidad del software y detectar errores. Sin embargo, si una clase tiene múltiples responsabilidades, puede ser complicado diseñar pruebas unitarias efectivas, ya que los casos de prueba pueden requerir cubrir una gran cantidad de escenarios diferentes.
 
-### Propagación de cambios no deseados: 
+6. **Propagación de cambios no deseados:** 
 Si una clase está sobrecargada con múltiples responsabilidades, es más probable que los cambios realizados en esa clase afecten a otras partes del sistema. Esto puede generar cambios no deseados y causar problemas inesperados en diferentes áreas del software.
 
 ### Resumen:
@@ -58,22 +60,22 @@ Cuando aplicamos la Separación de Intereses, evitamos que una clase realice mú
 
 ### Ventajas de la Separación de Intereses:
 
-#### Claridad y comprensión del código: 
-l tener clases enfocadas en una sola tarea, el código se vuelve más claro y fácil de entender para los desarrolladores. Esto permite una mejor comunicación dentro del equipo de desarrollo y facilita la colaboración.
+1. **Claridad y comprensión del código:**
+Al tener clases enfocadas en una sola tarea, el código se vuelve más claro y fácil de entender para los desarrolladores. Esto permite una mejor comunicación dentro del equipo de desarrollo y facilita la colaboración.
 
-#### Facilidad de mantenimiento: 
+2. **Facilidad de mantenimiento:** 
 Cuando cada clase tiene una única responsabilidad, los cambios y actualizaciones en el sistema se vuelven más sencillos de implementar. El código se vuelve más predecible y se minimizan los efectos secundarios en otras partes del sistema.
 
-#### Reutilización de código: 
+3. **Reutilización de código:** 
 Las clases con una sola responsabilidad son más fáciles de reutilizar en diferentes partes del sistema o en otros proyectos. Esto mejora la productividad y evita duplicar código.
 
-#### Facilita las pruebas unitarias: 
+4. **Facilita las pruebas unitarias:** 
 La Separación de Intereses favorece la escritura de pruebas unitarias más específicas y aisladas. Cada clase se puede probar de manera individual sin preocuparse por el impacto de otras funcionalidades.
 
-#### Flexibilidad y evolución del sistema: 
+6. **Flexibilidad y evolución del sistema:** 
 Al mantener responsabilidades separadas, el sistema se vuelve más flexible y escalable. Agregar nuevas funcionalidades o realizar cambios en una parte del sistema no afectará a otras áreas no relacionadas.
 
-#### Mejora la legibilidad y la documentación: 
+7. **Mejora la legibilidad y la documentación:** 
 El enfoque claro y coherente de cada clase facilita la documentación del código y mejora su legibilidad para los desarrolladores que se unen al proyecto más adelante.
 
 ## Aplicación a métodos y clases
