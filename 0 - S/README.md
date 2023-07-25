@@ -25,6 +25,29 @@ El SRP también se relaciona con otros principios SOLID, como el Principio de Ab
 
 El principio SRP aborda uno de los problemas fundamentales en el diseño de software: el código monolítico y sobrecargado. Si una clase tiene múltiples responsabilidades, esto puede llevar a una serie de problemas, como una mayor complejidad, dificultad para mantener el código, acoplamiento excesivo, dificultades para realizar pruebas unitarias y la propagación de cambios no deseados en el código. Estos problemas se acentúan a medida que el tamaño y la complejidad del software crecen.
 
+### Código monolítico y sobrecargado: 
+Si una clase tiene múltiples responsabilidades, su código tiende a volverse monolítico y sobrecargado. Esto significa que la clase realiza muchas tareas diferentes y puede ser difícil de entender, ya que su funcionalidad está dispersa por todo el código. Un código monolítico puede ser más complicado de mantener y modificar, lo que dificulta la evolución del software.
+
+### Complejidad y falta de cohesión: 
+Las clases con múltiples responsabilidades pueden volverse complejas y tener una baja cohesión. La cohesión se refiere a la relación entre los miembros de una clase y cómo trabajan juntos para lograr un objetivo común. Cuando una clase tiene demasiadas responsabilidades, sus métodos y atributos pueden perder su relación lógica, lo que complica la comprensión del código.
+
+### Dificultad para mantener el código: 
+Un código con múltiples responsabilidades puede ser difícil de mantener debido a la falta de claridad y estructura. Los desarrolladores pueden encontrar desafíos al intentar realizar cambios o corregir errores, ya que cualquier modificación podría afectar a múltiples aspectos del sistema.
+
+### Acoplamiento excesivo: 
+El acoplamiento es la dependencia entre distintas partes del código. Si una clase tiene múltiples responsabilidades, es probable que esté altamente acoplada con otras clases o módulos del sistema. El acoplamiento excesivo puede dificultar los cambios, ya que una modificación en una parte del código puede tener efectos secundarios no deseados en otras partes.
+
+### Dificultades en las pruebas unitarias:
+Las pruebas unitarias son esenciales para garantizar la calidad del software y detectar errores. Sin embargo, si una clase tiene múltiples responsabilidades, puede ser complicado diseñar pruebas unitarias efectivas, ya que los casos de prueba pueden requerir cubrir una gran cantidad de escenarios diferentes.
+
+### Propagación de cambios no deseados: 
+Si una clase está sobrecargada con múltiples responsabilidades, es más probable que los cambios realizados en esa clase afecten a otras partes del sistema. Esto puede generar cambios no deseados y causar problemas inesperados en diferentes áreas del software.
+
+### Resumen:
+El Principio de Responsabilidad Única aborda estos problemas al fomentar la creación de clases que tengan una única responsabilidad y estén altamente cohesivas. Al dividir las responsabilidades de manera adecuada, el código se vuelve más claro, conciso y fácil de mantener. Cada clase se convierte en un bloque de construcción bien definido y autónomo, lo que facilita la evolución y extensión del sistema sin afectar a otras partes del código.
+
+Al seguir el SRP, se mejora la modularidad del software, lo que permite a los desarrolladores trabajar en partes específicas del sistema de forma independiente. Esto fomenta un enfoque más estructurado y ordenado para el diseño del software, lo que resulta en un código más limpio, mantenible y escalable. En última instancia, el Principio de Responsabilidad Única contribuye a la creación de sistemas más robustos, flexibles y fáciles de mantener a medida que el software evoluciona con el tiempo.
+
 ## Separación de intereses
 
 El SRP promueve la separación de intereses y la modularidad en el diseño del software. Cada módulo o clase debe enfocarse en un único aspecto o tarea, lo que permite que el código sea más claro, conciso y fácil de entender. Además, al mantener responsabilidades separadas, se facilita la evolución del sistema, ya que los cambios en una parte del código no afectarán a otras áreas no relacionadas.
