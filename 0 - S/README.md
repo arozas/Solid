@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Single Responsibility Principle (SRP)</h1>
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/single-responsibility-principle-on-different-levels-of-abstraction.jpg" alt="SRP Image">
+  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/single-responsibility-principle-on-different-levels-of-abstraction.jpg" alt="SRP Image">
 </p>
 
 >"SRP es uno de los conceptos más importantes en el diseño orientado a objetos. También es uno de los conceptos más simples de comprender y seguir. Sin embargo, curiosamente, SRP suele ser el principio de diseño de clases más abusado."\
