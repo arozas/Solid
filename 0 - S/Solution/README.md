@@ -1,10 +1,10 @@
 ﻿﻿<h1 align="center">La Solución</h1>
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/SwissArmyKnife.gif" alt="Violación del Principio de Responsabilidad Única en C#">
+  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/SpecializedTools.jpg" alt="Violación del Principio de Responsabilidad Única en C#">
 </p>
 
->""En la programación orientada a objetos, las clases son como herriamientas especializadas, ¡mejor enfocados en una tarea a la vez que ser navajas suizas complejas!."\
+>"Para cada tarea, su herramienta."\
 > -Algún programador clean coder.
 
 ## Ejemplo de Implementación del Principio de Responsabilidad Única en C#:
@@ -12,7 +12,7 @@ Vamos a implementar el mismo ejemplo siguiendo el SRP (Principio de Responsabili
 
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/InvoiceClass.jpg" alt="Principio de Responsabilidad Única en C#">
+  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/AplicacionPrincipio.jpg" alt="Principio de Responsabilidad Única en C#">
 </p>
 
 Como se puede ver en el diagrama anterior, ahora vamos a crear tres clases. En la clase "Invoice" (Factura), solo se implementarán las funcionalidades relacionadas con las facturas. La clase "Logger" se utilizará únicamente para el registro de actividades. Del mismo modo, la clase "Email" manejará las actividades de correo electrónico. Ahora cada clase tiene solo sus propias responsabilidades, lo que cumple con el Principio de Responsabilidad Única en C#. Si deseas modificar la funcionalidad de correo electrónico, solo necesitas cambiar la clase "Email", no las clases "Invoice" y "Logger". De manera similar, si deseas modificar las funcionalidades de "Invoice", solo necesitas cambiar la clase "Invoice", no las clases "Email" y "Logger". Ahora, procedamos y veamos cómo implementar esto utilizando C#.
