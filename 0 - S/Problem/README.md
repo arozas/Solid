@@ -1,11 +1,16 @@
 ﻿<h1 align="center">El Problema</h1>
 
 <p align="center">
-  <img src="[https://github.com/arozas/Solid/tree/main/img/SRP](https://github.com/arozas/Solid/blob/main/img/SRP/Swiss%20Army%20Knife.gif)" alt="Violación del Principio de Responsabilidad Única en C#">
+  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/SwissArmyKnife.gif" alt="Violación del Principio de Responsabilidad Única en C#">
 </p>
 
+>""En la programación orientada a objetos, las clases son como herriamientas especializadas, ¡mejor enfocados en una tarea a la vez que ser navajas suizas complejas!."\
+> -Algún programador clean coder.
+
 ## Sobre el problema que trata este principio:
-Vamos a entender el Principio de Responsabilidad Única en C# con un ejemplo practico. Supongamos que necesitamos diseñar una clase llamada "Invoice" (Factura). Como sabemos, la clase "Invoice" se utiliza básicamente para calcular varios importes basados en sus datos. La clase "Invoice" no deberia saber cómo obtener los datos, ni cómo formatear los datos para mostrarlos, imprimirlos, registrarlos, enviar un correo electrónico, etc.
+El problema de las "navajas suizas" en la POO radica en violar el Principio de Responsabilidad Única (SRP). Cuando una clase asume múltiples responsabilidades y realiza diversas tareas, se convierte en una "navaja suiza" sobrecargada. Esto conduce a un código poco mantenible, difícil de entender y propenso a errores.
+
+Vamos a entender el Principio de Responsabilidad Única en C# con un ejemplo practico. Supongamos que necesitamos diseñar una clase llamada "Invoice" (Factura). Como sabemos, la clase "Invoice" se utiliza básicamente para calcular distintos importes basados en sus datos. La clase "Invoice" no deberia saber cómo obtener los datos, ni cómo formatear los datos para mostrarlos, imprimirlos, registrarlos, enviar un correo electrónico, etc.
 
 Si implementamos la lógica de la base de datos, la lógica de negocio y también la lógica de visualización en una sola clase, entonces nuestra clase tendrá múltiples responsabilidades. Esto genera que se vuelva muy difícil cambiar una responsabilidad sin romper las otras responsabilidades. Así que, al mezclar múltiples responsabilidades en una sola clase, obtenemos la siguiente desventaja:
 
