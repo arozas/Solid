@@ -7,14 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/0 - S/Solution/Invoice.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0 - S/Solution/Logger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0 - S/Solution/MailSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0 - S/Solution/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Solid.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690241389430</updated>
       <workItem from="1690241390463" duration="7000" />
-      <workItem from="1690241499705" duration="9582000" />
+      <workItem from="1690241499705" duration="10176000" />
     </task>
     <servers />
   </component>
