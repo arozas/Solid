@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Open Close Principle (OCP)</h1>
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/single-responsibility-principle-on-different-levels-of-abstraction.jpg" alt="SRP Image">
+  <img src="https://github.com/arozas/Solid/blob/main/img/OCP/OCP%20-%20TITLE.png" alt="SRP Image">
 </p>
 
 >"El Principio de Abierto-Cerrado (OCP) fue acuñado en 1988 por Bertrand Meyer.1 Dice: Un artefacto de software debería estar abierto para la extensión pero cerrado para la modificación.."\
