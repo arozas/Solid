@@ -27,15 +27,71 @@ Para abordar estos problemas, es necesario aplicar el OCP en el diseño de softw
 
 Imagina que tienes una clase llamada "ReportingServices" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado XML (Extensible Markup Language) o en JSON (JavaScript Object Notation). Si la clase "ReportingServices" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad como se ve en la implementación de "ReportingServices2".
 
-## Conclusión:
+```csharp
+public class ReportingServices2
+{
+    public void GenerateReport(List<Order> orders, ReportType type)
+    {
+        //Generic implementation to create a report.
+        
+        //Specific conversion depending on type
+        if (type == ReportType.PDF)
+        {
+            CreatePDFReport(orders);
+        }
+        else if(type == ReportType.EXCEL)
+        {
+            CreateExcelReport(orders);
+        }        
+        else if(type == ReportType.JSON)
+        {
+            CreateJsonReport(orders);
+        }
+        else if(type == ReportType.XML)
+        {
+            CreateXMLReport(orders);
+        }
+    }
 
-Con este diseño, si queremos modificar la funcionalidad de registro o si queremos modificar la funcionalidad de envío de
-correos electrónicos, entonces necesitamos modificar la clase "Invoice". Esto viola el Principio de Responsabilidad
-Única, ya que estamos cambiando la clase "Invoice" para otra funcionalidad. Si realizamos los cambios, entonces
-necesitamos probar la funcionalidad de registro y de correo electrónico junto con la funcionalidad de facturación. Y si
-generamos otra clase, como puede ser "Receipt"(Recibo), esta tendrá que tener sus propias implementaciones de registro
-de errores como de envío de correo electrónico, repitiendo mucho código por cada clase que generemos que diseñamos para
-tener esas funcionalidades.
+    private void CreateExcelReport(List<Order> orders)
+    {
+        //Code to create an Excel Report
+    }
+
+    private void CreatePDFReport(List<Order> orders)
+    {
+        //Code to create a PDF Report
+    }
+    
+    private void CreateXMLReport(List<Order> orders)
+    {
+        //Code to create a XML Report
+    }
+
+    private void CreateJsonReport(List<Order> orders)
+    {
+        //Code to create a JSON Report
+    }
+
+}
+
+public class Order
+{
+    //Generic implementation of Order Class.
+}
+
+public enum ReportType
+{
+    PDF,
+    EXCEL,
+    JSON,
+    XML
+}
+```
+El problema como vemos ahora en "ReportingServices2" está acoplada directamente a los diferentes tipos de informes (PDF, EXCEL, JSON, XML). Como resultado, cada vez que se agregue un nuevo tipo de informe o se desee modificar uno existente, es necesario modificar directamente el código de la clase ReportingServices. Si se desea agregar un nuevo tipo de informe en el futuro, será necesario modificar la clase ReportingServices, lo que va en contra del Principio de Abierto-Cerrado (OCP). Las múltiples verificaciones condicionales dentro del método **GenerateReport** hacen que la extensión del código sea complicada y propensa a errores.
+
+## Conclusión:
+Si se desea agregar un nuevo tipo de informe en el futuro, será necesario modificar la clase ReportingServices, lo que va en contra del Principio de Abierto-Cerrado (OCP). Las múltiples verificaciones condicionales dentro del método GenerateReport hacen que la extensión del código sea complicada y propensa a errores.
 
 
 
