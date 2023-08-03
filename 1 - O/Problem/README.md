@@ -11,8 +11,6 @@
 
 El problema de no aplicar el Principio de Abierto-Cerrado (OCP) en la programación orientada a objetos (POO) radica en la falta de extensibilidad y la dificultad para adaptar el código a cambios futuros. Cuando una clase no sigue el OCP, es decir, no está abierta para la extensión y cerrada para la modificación, suele ser difícil agregar nuevas funcionalidades o adaptar el comportamiento existente sin modificar directamente el código fuente de la clase.
 
-Imagina que tienes una clase llamada "ReportingServices" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado XML (Extensible Markup Language) o en JSON (JavaScript Object Notation). Si la clase "ReportingServices" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad como se ve en la implementación de "ReportingServices2".
-
 El problema con esto es que puede llevar a una serie de desventajas:
 
 1. Riesgo de errores: Al modificar directamente el código existente, existe un alto riesgo de introducir errores o efectos secundarios no deseados. El código ya probado y funcionando correctamente podría alterarse, lo que afectaría la estabilidad del sistema.
@@ -37,11 +35,7 @@ Por favor, echa un vistazo al siguiente diagrama que queremos implementar en nue
   <img src="https://github.com/arozas/Solid/blob/main/img/SRP/InvoiceClass.jpg" alt="Violación del Principio de Responsabilidad Única en C#">
 </p>
 
-Como se puede ver en la imagen anterior, la clase "Invoice" posee cuatro funcionalidades que no guardan relación entre
-si, es decir, los métodos Agregar Facturas, Eliminar Facturas, y Envío de Correos Electrónicos, todos con sus respectivo
-Registro de Errores. Al poner todas estas cuatro funcionalidades en una sola clase o módulo, estamos violando el
-Principio de Responsabilidad Única en C#. Esto se debe a que el envío de correos electrónicos y el registro de errores
-no son parte del módulo de facturación.
+Imagina que tienes una clase llamada "ReportingServices" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado XML (Extensible Markup Language) o en JSON (JavaScript Object Notation). Si la clase "ReportingServices" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad como se ve en la implementación de "ReportingServices2".
 
 ## Conclusión:
 
