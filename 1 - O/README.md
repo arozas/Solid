@@ -21,8 +21,8 @@ El OCP se fundamenta en el deseo de evitar que los cambios realizados en una par
 ## Tabla de Contenidos
 - [La necesidad del OCP](#la-necesidad-del-ocp)
 - [Extensión](#extensión)
-- [Cerrado para modificación](#cerrado-para-modificación)
-- [Flexibilidad y extensibilidad](#flexibilidad-y-extensibilidad)
+- [Cerrado para modificación](#cerrado-para-modificación)  
+- [Abierto para extensión](#abierto-para-extensión)
 - [Relación con otros principios SOLID](#relación-con-otros-principios-solid)
 - [El principio SRP se puede entender y aplicar mediante los siguientes puntos](#el-principio-srp-se-puede-entender-y-aplicar-mediante-los-siguientes-puntos)
 - [Conclusión](#conclusión)
@@ -105,30 +105,24 @@ Para lograr el "cerrado para modificación" en OCP, es importante seguir ciertas
 ### Resumen:
 El Principio de Abierto-Cerrado implica mantener la estabilidad del código existente y evitar cambios directos en su lógica y comportamiento. Al seguir prácticas de diseño sólidas, utilizar interfaces estables, encapsulación adecuada y pruebas unitarias, los desarrolladores pueden asegurarse de que el software se mantenga confiable y estable con el tiempo, lo que facilita la extensión sin comprometer la integridad del sistema.
 
+## Abierto para extensión:
 
-## Flexibilidad y extensibilidad
+Un componente de software debe permitir la incorporación de nuevas funcionalidades o características sin requerir cambios en el código existente de dicho componente. La idea es que el software pueda evolucionar y adaptarse a nuevos requisitos o escenarios sin modificar su comportamiento previo, lo que facilita la extensión sin afectar la estabilidad y funcionalidad existentes.
 
-Al seguir el SRP, el código se vuelve más flexible y extensible. Cuando se necesita agregar nuevas funcionalidades, se pueden crear nuevas clases o módulos con responsabilidades adicionales sin tener que modificar las clases existentes. Esto evita el riesgo de introducir errores y efectos secundarios en el código existente.
+Para lograr el "abierto para extensión" en OCP, es necesario seguir ciertas prácticas y principios de diseño que faciliten la incorporación de nuevas funcionalidades:
 
-La flexibilidad y extensibilidad son beneficios clave que se obtienen al seguir el Principio de Responsabilidad Única (SRP) en el diseño de software. Al tener clases con una única responsabilidad, el código se vuelve más adaptable y abierto a cambios sin afectar otras partes del sistema. A continuación, se explora en detalle cómo el SRP mejora la flexibilidad y extensibilidad del código:
+1. **Interfaces bien definidas**: Definir interfaces claras y estables es fundamental para permitir la extensión en OCP. Las interfaces actúan como contratos que especifican qué métodos deben implementar las clases que las implementan. Al programar en términos de interfaces, en lugar de implementaciones concretas, se pueden agregar nuevas implementaciones para extender el comportamiento del sistema sin afectar las partes existentes.
 
-1. **Adaptabilidad a nuevos requerimientos:**
-   Cuando se necesita agregar nuevas funcionalidades o modificar el comportamiento de una aplicación, el SRP permite hacerlo de forma más sencilla. Al tener clases con responsabilidades específicas, es posible crear nuevas clases o módulos para abordar los nuevos requerimientos sin modificar las clases existentes. Esto significa que se puede extender la funcionalidad del sistema sin arriesgarse a alterar funcionalidades previamente funcionales.
+2. **Clases o módulos cohesivos**: Es importante diseñar clases o módulos que tengan una única responsabilidad y sean cohesivos. De esta manera, cuando se necesite agregar una nueva funcionalidad, se puede crear una nueva clase o módulo que cumpla con esa responsabilidad adicional, sin afectar las clases ya existentes.
 
-2. **Reducción del acoplamiento:**
-   El acoplamiento entre clases puede ser problemático cuando se realizan cambios en una parte del código que afectan a otras partes. Al seguir el SRP y tener clases con responsabilidades separadas, se disminuye el riesgo de que los cambios en una clase afecten negativamente a otras. Esto resulta en un sistema menos acoplado y más fácil de mantener y extender.
+3. **Herencia y polimorfismo**: El uso de herencia y polimorfismo es esencial para permitir la extensión en OCP. Al heredar de clases base o implementar interfaces comunes, es posible agregar nuevas clases que se ajusten a la estructura del sistema y puedan ser utilizadas en lugar de las clases base, aprovechando el polimorfismo para mantener la coherencia en el código existente.
 
-3. **Pruebas y verificación más precisas:**
-   Con clases bien definidas y con responsabilidades únicas, las pruebas unitarias pueden enfocarse en verificar el comportamiento específico de cada clase. Esto facilita la identificación de errores y asegura que cada clase cumpla con su tarea correctamente. Las pruebas unitarias proporcionan una mayor confianza en la calidad del software y evitan la propagación de errores a través de la aplicación.
+4. **Patrones de diseño**: Algunos patrones de diseño, como el patrón Strategy o el patrón Decorator, son especialmente útiles para permitir la extensión en OCP. Por ejemplo, el patrón Strategy permite cambiar el comportamiento de un objeto en tiempo de ejecución al intercambiar la estrategia asociada.
 
-4. **Módulos independientes y reutilizables:**
-   El SRP promueve la creación de módulos independientes y cohesivos, lo que facilita la reutilización de clases en diferentes partes del sistema o incluso en otros proyectos. Estas clases bien definidas pueden ser extraídas y utilizadas en distintos contextos, lo que ahorra tiempo y esfuerzo al no tener que reimplementar funcionalidades similares en múltiples lugares.
+5. **Inyección de dependencias**: La inyección de dependencias es otra técnica que facilita la extensión en OCP. Permite proporcionar dependencias externas a una clase en lugar de que la clase las cree internamente. De esta manera, se pueden reemplazar las dependencias con otras nuevas para extender el comportamiento sin modificar el código existente.
 
-5. **Evolución continua del código:**
-   Los sistemas de software no son estáticos; están sujetos a cambios y mejoras continuas. Al seguir el SRP, el código es más fácil de mantener y evolucionar a lo largo del tiempo. La introducción de nuevas características o la corrección de errores se convierte en un proceso más predecible y menos propenso a causar regresiones en otras partes del sistema.
-
-6. **Mejora de la colaboración en equipos de desarrollo:**
-   En proyectos colaborativos, el SRP facilita el trabajo en equipo al dividir las responsabilidades entre distintos miembros. Cada desarrollador puede enfocarse en implementar una clase específica sin interferir en el trabajo de los demás. Esto reduce conflictos en el código y agiliza el proceso de desarrollo.
+### Resumen:
+En resumen, el "abierto para extensión" en el Principio de Abierto-Cerrado se refiere a la capacidad de agregar nuevas funcionalidades al software sin modificar el código existente. Al seguir prácticas de diseño sólidas, utilizar interfaces, clases o módulos cohesivos, herencia, polimorfismo, patrones de diseño y la inyección de dependencias, los desarrolladores pueden diseñar sistemas de software flexibles y extensibles que puedan adaptarse a los cambios futuros sin comprometer la estabilidad y funcionalidad existentes. Esto facilita la evolución y mantenimiento del software a lo largo del tiempo.
 
 ## Relación con otros principios SOLID
 
