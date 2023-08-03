@@ -126,7 +126,19 @@ En resumen, el "abierto para extensión" en el Principio de Abierto-Cerrado se r
 
 ## Relación con otros principios SOLID
 
-El SRP se relaciona estrechamente con otros principios SOLID, especialmente con el Principio de Abierto/Cerrado (OCP) y el Principio de Sustitución de Liskov (LSP). Al mantener clases con responsabilidades únicas y bien definidas, se facilita la extensión (OCP) y se garantiza que las clases derivadas puedan reemplazar a las clases base sin problemas (LSP).
+A continuación, se explora la relación del OCP con los otros principios SOLID:
+
+- Principio de Responsabilidad Única (Single Responsibility Principle, SRP):
+El SRP establece que una clase debe tener una única responsabilidad y motivo para cambiar. La relación con el OCP radica en que, al seguir el SRP, una clase tiene menos razones para cambiar, lo que facilita el "cerrado para modificación" del OCP. Cuando una clase tiene una única responsabilidad y cambia solo por motivos relacionados con esa responsabilidad, es menos probable que necesite modificaciones directas para incorporar nuevas funcionalidades.
+
+- Principio de Sustitución de Liskov (Liskov Substitution Principle, LSP):
+El LSP establece que los objetos de una clase derivada deben poder reemplazar a los objetos de la clase base sin afectar la correctitud del programa. La relación con el OCP es que, al seguir el LSP, se pueden agregar nuevas clases derivadas para extender el comportamiento del sistema, permitiendo la "extensión" sin afectar el código existente.
+
+- Principio de Segregación de Interfaces (Interface Segregation Principle, ISP):
+El ISP establece que una clase no debe depender de interfaces que no utiliza. La relación con el OCP es que, al adherirse al ISP, se evita la dependencia innecesaria y se facilita la "extensión" en OCP. Si una clase solo depende de las interfaces que necesita y no de otras interfaces irrelevantes, agregar nuevas implementaciones de interfaces para extender el comportamiento se vuelve más sencillo.
+
+- Principio de Inversión de Dependencias (Dependency Inversion Principle, DIP):
+El DIP establece que los módulos de alto nivel no deben depender de los módulos de bajo nivel, sino de abstracciones. La relación con el OCP es que el DIP facilita el "abierto para extensión" en OCP. Al depender de abstracciones en lugar de implementaciones concretas, es más fácil agregar nuevas implementaciones sin modificar el código de alto nivel.
 
 ## El principio SRP se puede entender y aplicar mediante los siguientes puntos
 
