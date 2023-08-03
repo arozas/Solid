@@ -23,17 +23,7 @@ El problema con esto es que puede llevar a una serie de desventajas:
 
 Para abordar estos problemas, es necesario aplicar el OCP en el diseño de software. Al seguir este principio, se deben crear interfaces estables que permitan la extensión y definir clases que implementen esas interfaces sin necesidad de modificar el código existente. Al agregar nuevas funcionalidades, se pueden crear nuevas clases que cumplan con las mismas interfaces, lo que permite que el código existente funcione sin cambios.
 
-## Ejemplo sin usar el Principio de Responsabilidad Única en C#:
-
-Veamos la diagramación de la clase "Invoice" sin el uso del Principio de Responsabilidad Única en C#. Ahora podemos
-intentar al ver el diagrama entender lo expuesto anteriormente y en en esta misma carpeta se encuentra la implementación
-de este diagrama.
-
-Por favor, echa un vistazo al siguiente diagrama que queremos implementar en nuestro ejemplo:
-
-<p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/InvoiceClass.jpg" alt="Violación del Principio de Responsabilidad Única en C#">
-</p>
+## Ejemplo sin usar el Principio de ABIERTO-CERRADO en C#:
 
 Imagina que tienes una clase llamada "ReportingServices" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado XML (Extensible Markup Language) o en JSON (JavaScript Object Notation). Si la clase "ReportingServices" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad como se ve en la implementación de "ReportingServices2".
 
