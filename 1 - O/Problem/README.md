@@ -4,7 +4,7 @@
   <img src="https://github.com/arozas/Solid/blob/main/img/OCP/OCP.jpg" alt="Violación del Principio de ABIERTO-CERRADO en C#">
 </p>
 
-> ""En la programación orientada a objetos, las clases son como herriamientas especializadas, ¡mejor enfocados en una tarea a la vez que ser navajas suizas complejas!."\
+> "Sin OCP, el software se convierte en un castillo de naipes, donde cada cambio puede derrumbarlo todo."\
 > -Algún programador clean coder.
 
 ## Sobre el problema que trata este principio:
