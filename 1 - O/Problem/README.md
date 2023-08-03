@@ -1,7 +1,7 @@
 ﻿<h1 align="center">El Problema</h1>
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/SwissArmyKnife.gif" alt="Violación del Principio de ABIERTO-CERRADO en C#">
+  <img src="https://github.com/arozas/Solid/blob/main/img/OCP/OCP.jpg" alt="Violación del Principio de ABIERTO-CERRADO en C#">
 </p>
 
 > ""En la programación orientada a objetos, las clases son como herriamientas especializadas, ¡mejor enfocados en una tarea a la vez que ser navajas suizas complejas!."\
