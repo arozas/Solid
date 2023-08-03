@@ -24,7 +24,7 @@ El OCP se fundamenta en el deseo de evitar que los cambios realizados en una par
 - [Cerrado para modificación](#cerrado-para-modificación)  
 - [Abierto para extensión](#abierto-para-extensión)
 - [Relación con otros principios SOLID](#relación-con-otros-principios-solid)
-- [El principio SRP se puede entender y aplicar mediante los siguientes puntos](#el-principio-srp-se-puede-entender-y-aplicar-mediante-los-siguientes-puntos)
+- [El principio OCP se puede entender y aplicar mediante los siguientes puntos](#el-principio-ocp-se-puede-entender-y-aplicar-mediante-los-siguientes-puntos)
 - [Conclusión](#conclusión)
 
 ## La necesidad del OCP
