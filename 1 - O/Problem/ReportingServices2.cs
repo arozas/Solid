@@ -1,6 +1,6 @@
 ﻿namespace Solid._1___O.Problem;
 
-public class ReportingServices
+public class ReportingServices2
 {
     public void GenerateReport(List<Order> orders, ReportType type)
     {
@@ -14,6 +14,14 @@ public class ReportingServices
         else if(type == ReportType.EXCEL)
         {
             CreateExcelReport(orders);
+        }        
+        else if(type == ReportType.JSON)
+        {
+            CreateJsonReport(orders);
+        }
+        else if(type == ReportType.XML)
+        {
+            CreateXMLReport(orders);
         }
     }
 
@@ -26,6 +34,17 @@ public class ReportingServices
     {
         //Code to create a PDF Report
     }
+    
+    private void CreateXMLReport(List<Order> orders)
+    {
+        //Code to create a XML Report
+    }
+
+    private void CreateJsonReport(List<Order> orders)
+    {
+        //Code to create a JSON Report
+    }
+
 }
 
 public class Order
@@ -36,5 +55,7 @@ public class Order
 public enum ReportType
 {
     PDF,
-    EXCEL
+    EXCEL,
+    JSON,
+    XML
 }

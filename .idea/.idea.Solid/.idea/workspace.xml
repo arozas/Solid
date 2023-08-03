@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1 - O/Problem/ReportingServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Problem/ReportingServices2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1 - O/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/1 - O/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Solid.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,10 @@
       <workItem from="1690241390463" duration="7000" />
       <workItem from="1690241499705" duration="10176000" />
       <workItem from="1690286912081" duration="2909000" />
-      <workItem from="1690303458476" duration="449000" />
+      <workItem from="1690303458476" duration="826000" />
+      <workItem from="1691082534038" duration="288000" />
+      <workItem from="1691082883287" duration="252000" />
+      <workItem from="1691083226515" duration="332000" />
     </task>
     <servers />
   </component>
