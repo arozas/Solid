@@ -11,7 +11,7 @@
 
 El problema de no aplicar el Principio de Abierto-Cerrado (OCP) en la programación orientada a objetos (POO) radica en la falta de extensibilidad y la dificultad para adaptar el código a cambios futuros. Cuando una clase no sigue el OCP, es decir, no está abierta para la extensión y cerrada para la modificación, suele ser difícil agregar nuevas funcionalidades o adaptar el comportamiento existente sin modificar directamente el código fuente de la clase.
 
-Imagina que tienes una clase llamada "ReportingServices2" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel, JSON y XML. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado CSV (Comma Separated Values). Si la clase "ReportingServices2" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad.
+Imagina que tienes una clase llamada "ReportingServices" que se encarga de generar informes en una aplicación. Actualmente, esta clase puede generar informes en diferentes formatos, como PDF, Excel. Sin embargo, debido a cambios en los requisitos del negocio, ahora también necesitas que esta clase sea capaz de generar informes en un nuevo formato llamado XML (Extensible Markup Language) o en JSON (JavaScript Object Notation). Si la clase "ReportingServices" no sigue el Principio de Abierto-Cerrado (OCP), tendrás que modificar directamente el código de la clase para agregar la nueva funcionalidad como se ve en la implementación de "ReportingServices2".
 
 El problema con esto es que puede llevar a una serie de desventajas:
 
