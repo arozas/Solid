@@ -9,11 +9,15 @@
 
 ## Tabla de Contenidos
 - [Resumen](#resumen)
-- [Principio de Responsabilidad Única (Single Responsibility Principle - SRP)](#)
-- [Principio de Abierto/Cerrado (Open/Closed Principle - OCP)](#)
-- [Principio de Sustitución de Liskov (Liskov Substitution Principle - LSP)](#)
-- [Principio de Segregación de Interfaces (Interface Segregation Principle - ISP)](#)
-- [Principio de Inversión de Dependencia (Dependency Inversion Principle - DIP)](#)
+  
+-  <a href="https://github.com/arozas/Solid/tree/main/0%20-%20S">
+    S - Principio de Responsabilidad Única (Single Responsibility Principle - SRP)
+  </a>
+  
+-  <a href="https://github.com/arozas/Solid/tree/main/1%20-%20O">
+    O - Principio de Abierto/Cerrado (Open/Closed Principle - OCP)
+  </a>
+  
 - [Licencia](#licencia)
   
 ## Resumen
