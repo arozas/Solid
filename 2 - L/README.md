@@ -4,7 +4,7 @@
   <img src="https://github.com/arozas/Solid/blob/main/img/LSP/LSP%20-%20TITLE.png" alt="LSP Image">
 </p>
 
->"El Principio de Abierto-Cerrado (OCP) fue acuñado en 1988 por Bertrand Meyer.1 Dice: Un artefacto de software debería estar abierto para la extensión pero cerrado para la modificación.."\
+>"La LSP (Principio de Sustitución de Liskov) deja claro que en el DOD (Diseño Orientado a Objetos) la relación ISA(relación de herencia) se refiere al comportamiento. No al comportamiento intrínseco privado, sino al comportamiento público extrínseco; comportamiento en el que los clientes dependen."\
 > — Robert C. Martin
 
 ## Resumen
