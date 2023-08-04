@@ -7,7 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="" />
+    <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2 - L/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Solid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SRP/Certificado de cursado.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SRP/SAGA_V2_ES.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +81,7 @@
       <workItem from="1690303458476" duration="826000" />
       <workItem from="1691082534038" duration="288000" />
       <workItem from="1691082883287" duration="252000" />
-      <workItem from="1691083226515" duration="6283000" />
+      <workItem from="1691083226515" duration="6910000" />
     </task>
     <servers />
   </component>
