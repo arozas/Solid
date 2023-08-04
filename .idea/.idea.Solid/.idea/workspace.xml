@@ -8,8 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b35853e-47e0-47aa-aa70-e3715fad3cdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1 - O/Problem/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Problem/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/IReportGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/ReportGeneratorExcel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/ReportGeneratorJson.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/ReportGeneratorPDF.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/ReportGeneratorXML.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1 - O/Solution/ReportingService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Solid.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +87,7 @@
       <workItem from="1690303458476" duration="826000" />
       <workItem from="1691082534038" duration="288000" />
       <workItem from="1691082883287" duration="252000" />
-      <workItem from="1691083226515" duration="2571000" />
+      <workItem from="1691083226515" duration="5495000" />
     </task>
     <servers />
   </component>
