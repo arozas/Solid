@@ -1,10 +1,10 @@
 ﻿﻿<h1 align="center">La Solución</h1>
 
 <p align="center">
-  <img src="https://github.com/arozas/Solid/blob/main/img/SRP/SpecializedTools.jpg" alt="OCP en C#">
+  <img src="https://github.com/arozas/Solid/blob/main/img/OCP/no_change_but_children.jpg" alt="OCP en C#">
 </p>
 
->"Para cada tarea, su herramienta."\
+>"Delegar responsabilidades, de nuevo la especialización segregada."\
 > -Algún programador clean coder.
 
 ## Ejemplo de Implementación del Principio de Responsabilidad Única en C#:
