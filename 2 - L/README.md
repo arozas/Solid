@@ -9,14 +9,14 @@
 
 ## Resumen
 
-El Principio de Abierto-Cerrado (Open-Closed Principle, OCP) es uno de los cinco principios SOLID de diseño de software, propuestos por Bertrand Meyer. Este principio se enfoca en la construcción de software que sea fácil de mantener, extender y evolucionar a medida que los requisitos cambian con el tiempo.
+De los cinco principios SOLID, el Principio de Sustitución de Liskov es quizás uno de los más desafiantes de comprender. En términos generales, este principio simplemente establece que cada clase derivada debe ser sustituible por su clase padre. Lleva el nombre de Barbara Liskov, quien introdujo este concepto de subtipado de comportamiento en 1987. Liskov misma lo explicó de la siguiente manera:
 
-Un software debe estar abierto para su extensión, lo que significa que se debe poder agregar nuevas funcionalidades o características sin necesidad de modificar el código fuente existente. Al mismo tiempo, debe estar cerrado para su modificación, lo que implica que los componentes o módulos ya implementados no deben cambiar su comportamiento una vez que han sido probados y funcionan correctamente.
+>"Lo que se busca aquí es algo similar a la siguiente propiedad de sustitución: si para cada objeto O1 de tipo S hay un objeto O2 de tipo T tal que, para todos los programas P definidos en términos de T, el comportamiento de P no cambia cuando se sustituye O1 por O2, entonces S es un subtipo de T."\
+> — Barbara Liskov
 
-El OCP se fundamenta en el deseo de evitar que los cambios realizados en una parte del software afecten a otras partes que ya han sido implementadas y probadas. Al mantener el comportamiento existente intacto, se minimizan los riesgos de introducir nuevos errores o problemas en el sistema.
+Aunque este principio puede ser complicado de asimilar, en muchos sentidos, es simplemente una extensión del principio abierto-cerrado, ya que garantiza que las clases derivadas amplíen la clase base sin cambiar su comportamiento.
 
-
-
+Aplicar este principio ayuda a evitar consecuencias inesperadas de los cambios y evita la necesidad de modificar una clase cerrada para realizar cambios. Conduce a extensiones fáciles del software y, aunque pueda ralentizar el proceso de desarrollo, seguir este principio durante el desarrollo puede prevenir muchos problemas durante las actualizaciones y extensiones.
 
 ## Tabla de Contenidos
 - [La necesidad del OCP](#la-necesidad-del-ocp)
