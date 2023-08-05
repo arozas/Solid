@@ -26,7 +26,7 @@ Tanto los problemas como las soluciones están desarrollados en **C#** para faci
 
 Considero que aprender los fundamentos de los principios **SOLID** es esencial para el desarrollo de nuestra carrera como programadores. Aunque se les llama principios y son definidos por **Robert C. Martin** como proposiciones o verdades fundamentales que rigen el diseño de software, creo que en una profesión tan dinámica como la programación, donde los avances son constantes, es prudente considerarlos como prácticas comunes con un amplio consenso en el sector. Nuestro trabajo como programadores y desarrolladores también implica una investigación constante que nos permita encontrar nuevas soluciones. **Robert C. Martin** no declaró el fin de la historia con estos principios, sino que nos proporcionó una herramienta adicional para resolver de manera eficiente los problemas comunes en nuestras tareas cotidianas en el mundo del desarrollo.
 
-## Criticas
+## Críticas
 A pesar de que los principios **SOLID** han sido ampliamente aceptados y utilizados como guías para el diseño de software, también han sido objeto de algunas críticas y debates en la comunidad técnica y profesional. No voy a extenderme sobre las criticas de cada principio, ya que no es el objetivo de este repositorio, pero si voy a dejar una lista de las críticas más comunes para que el que le interese pueda investigarlas y leerlas.
 
 Algunas de las críticas más comunes incluyen:
