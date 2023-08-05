@@ -20,7 +20,7 @@ Aplicar este principio ayuda a evitar consecuencias inesperadas de los cambios y
 
 ## Tabla de Contenidos
 - [La necesidad del LSP](#la-necesidad-del-lsp)
-- [Extensión](#extensión)
+- [La compatibilidad de la interfaz](#la-compatibilidad-de-la-interfaz)
 - [Cerrado para modificación](#cerrado-para-modificación)  
 - [Abierto para extensión](#abierto-para-extensión)
 - [Relación con otros principios SOLID](#relación-con-otros-principios-solid)
@@ -52,30 +52,27 @@ El LSP facilita la creación de pruebas unitarias más efectivas y robustas. Cua
 ### Resumen:
 El Principio de Sustitución de Liskov es esencial para garantizar un diseño de software coherente, seguro y mantenible. Cumplir con el LSP proporciona beneficios como el polimorfismo efectivo, la reutilización de código, la consistencia en la jerarquía de clases y la facilidad de evolución del software. Es una herramienta poderosa para los diseñadores y desarrolladores de software que buscan construir sistemas sólidos y fiables.
 
-## Extensión
+## La compatibilidad de la interfaz
 
-La extensión implica agregar nuevas funcionalidades o características al software sin cambiar el código existente. Esto se logra mediante la creación de nuevas clases, interfaces, métodos o módulos que se integren con el código existente. Las extensiones permiten que el software evolucione para adaptarse a nuevos requerimientos o escenarios sin poner en riesgo su funcionamiento previo.
+La compatibilidad de la interfaz es una parte fundamental del Principio de Sustitución de Liskov (LSP) y se refiere a la necesidad de que una clase derivada proporcione una interfaz que sea compatible con la clase base. Esto implica que la clase derivada debe implementar todos los métodos y propiedades definidos en la clase base y respetar sus contratos y precondiciones. Exploremos esto en detalle:
 
-En el contexto del Principio de Abierto-Cerrado (OCP), la "extensión" se refiere a la capacidad de agregar nuevas funcionalidades o características a un sistema de software existente sin modificar el código fuente de las clases o módulos existentes. La extensión es una parte fundamental del OCP, ya que permite que el software evolucione y se adapte a cambios futuros sin romper el funcionamiento de las partes ya existentes.
+### 1. Métodos y Propiedades de la Clase Base:
+Cuando una clase A es una subclase de una clase B, la clase A debe proporcionar todos los métodos y propiedades que son definidos en la clase B. Esto significa que cualquier método o propiedad que se espera encontrar en la clase B también debe estar presente en la clase A. Esto asegura que los clientes que utilizan la clase base puedan seguir utilizando la clase derivada sin problemas.
 
-Para lograr la extensibilidad en OCP, es necesario seguir ciertas prácticas y utilizar patrones de diseño que permitan agregar nuevas funcionalidades sin afectar el código existente. Aquí hay algunas técnicas y conceptos relevantes relacionados con la extensión en OCP:
+Por ejemplo, si tenemos una clase base Shape que tiene un método calculateArea() y una clase derivada Circle que hereda de Shape, entonces Circle debe implementar el método calculateArea(). Si Circle no implementa este método, violaría el LSP, ya que no sería compatible con la interfaz esperada de Shape.
 
-1. **Interfaces:** Definir interfaces en lugar de implementaciones concretas es una práctica esencial para permitir la extensión. Las interfaces proporcionan un contrato que debe ser cumplido por las clases que las implementen. Al programar en términos de interfaces, se pueden agregar nuevas implementaciones de estas interfaces sin cambiar el código que las utiliza, lo que facilita la incorporación de nuevas funcionalidades.
+### 2. Contratos y Precondiciones:
+Una clase base puede tener ciertas expectativas sobre los valores de entrada o el estado antes de que se invoque un método. Estas expectativas se conocen como precondiciones. Una clase derivada debe respetar estas precondiciones y cumplir con los contratos establecidos por la clase base.
 
+Por ejemplo, si tenemos una clase base TemperatureConverter que tiene un método convertToCelsius() que espera recibir una temperatura en grados Fahrenheit, la clase derivada CelsiusConverter debe cumplir con esta expectativa y también aceptar temperaturas en grados Fahrenheit como entrada. Si CelsiusConverter no puede manejar estas entradas, no sería compatible con la interfaz de TemperatureConverter.
 
-2. **Clases abstractas:** Las clases abstractas también son útiles para la extensión en OCP. Una clase abstracta puede contener métodos con implementaciones predeterminadas y métodos abstractos que deben ser implementados por las clases hijas. Al agregar nuevas clases hijas, se pueden proporcionar implementaciones personalizadas para los métodos abstractos, lo que extiende el comportamiento del sistema sin cambiar la lógica en las clases base.
+### 3. Respetar la Semántica de los Métodos:
+Una clase derivada debe mantener la semántica y el propósito de los métodos definidos en la clase base. Esto significa que el comportamiento y los resultados de los métodos en la clase derivada deben ser consistentes con lo que se espera en la clase base.
 
-
-3. **Inversión de dependencias:** El principio de inversión de dependencias (Dependency Inversion Principle, DIP) es otra técnica que facilita la extensión. El DIP sugiere que los módulos de alto nivel no deben depender directamente de los módulos de bajo nivel, sino que ambos deben depender de abstracciones. Al depender de abstracciones, es más fácil cambiar o extender el comportamiento de un módulo sin afectar otros módulos.
-
-
-4. **Patrones de diseño:** Algunos patrones de diseño, como el patrón de diseño Strategy o el patrón Observer, son útiles para la extensión en OCP. Estos patrones permiten encapsular comportamientos que pueden variar y ser reemplazados dinámicamente sin modificar el código existente. Por ejemplo, el patrón Strategy permite cambiar el comportamiento de un objeto en tiempo de ejecución al intercambiar la estrategia asociada.
-
-
-5. **Inyección de dependencias:** La inyección de dependencias es una técnica que permite proporcionar las dependencias externas necesarias a una clase, en lugar de que la clase las cree internamente. Esto facilita la extensión, ya que se pueden cambiar o extender las dependencias sin alterar el código de la clase en sí.
+Por ejemplo, si tenemos una clase base Animal con un método makeSound() que devuelve un sonido característico del animal, la clase derivada Cat que hereda de Animal debe devolver el sonido "Miau" en su implementación de makeSound(). Si la clase Cat devuelve un sonido diferente o no devuelve ningún sonido, no sería compatible con la interfaz de Animal.
 
 ### Resumen:
-La extensión en el Principio de Abierto-Cerrado es una práctica esencial que permite que el software se adapte a cambios futuros sin modificar el código existente. Utilizando interfaces, clases abstractas, inversión de dependencias y patrones de diseño adecuados, los desarrolladores pueden diseñar sistemas flexibles, escalables y fáciles de mantener, promoviendo así una arquitectura de software sólida y de alta calidad.
+La compatibilidad de la interfaz es crucial para cumplir con el Principio de Sustitución de Liskov y garantizar que las clases derivadas sean realmente sustituibles por las clases base. Al respetar las expectativas y contratos establecidos por la clase base, se crea un diseño coherente y sólido que facilita el uso y mantenimiento del código en el futuro.
 
 ## Cerrado para modificación
 
