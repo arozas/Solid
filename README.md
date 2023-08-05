@@ -17,17 +17,17 @@
 ## Resumen
 Los principios SOLID fueron concebidos por **Robert C. Martin**, conocido en la industria como uncle Bob (El tío Bob), en un ensayo del año 2000 titulado **"Principios de Diseño y Patrones de Diseño"**, aunque el acrónimo fue acuñado más tarde por **Michael Feathers**. En su ensayo, Martin destacó la importancia de la evolución y el cambio en el software exitoso. A medida que un sistema evoluciona, tiende a volverse más complejo. Sin embargo, Martin advirtió que sin buenos principios de diseño, el software puede volverse rígido, frágil, inmóvil y difícil de modificar. Los principios SOLID surgieron como una solución para abordar estos patrones de diseño problemáticos.
 
-Los principios SOLID son un conjunto de cinco pautas de diseño de software que fueron introducidas por el ingeniero de software Robert C. Martin. Estos principios se centran en la escritura de código limpio, mantenible y extensible, y son ampliamente considerados como fundamentales para la ingeniería de software orientada a objetos. Cada principio aborda una faceta específica del diseño de software y, en conjunto, buscan mejorar la calidad y la flexibilidad de los sistemas de software.
+Los principios **SOLID** son un conjunto de cinco pautas de diseño de software que fueron introducidas por el ingeniero de software **Robert C. Martin**. Estos principios se centran en la escritura de código limpio, mantenible y extensible, y son ampliamente considerados como fundamentales para la ingeniería de software orientada a objetos. Cada principio aborda una faceta específica del diseño de software y, en conjunto, buscan mejorar la calidad y la flexibilidad de los sistemas de software.
 
 ## Objetivo
-La idea principal de este repositorio es explicar de manera técnica y detallada los principios SOLID. Sin embargo, para no limitarnos únicamente al marco teórico, también planteamos problemas de diseño que estos principios abarcan e implementamos las soluciones propuestas por ellos.
+La idea principal de este repositorio es explicar de manera técnica y detallada los principios **SOLID**. Sin embargo, para no limitarnos únicamente al marco teórico, también planteamos problemas de diseño que estos principios abarcan e implementamos las soluciones propuestas por ellos.
 
 Tanto los problemas como las soluciones están desarrollados en **C#** para facilitar la visualización y comprensión de lo que se está planteando. Cada principio cuenta con una carpeta en este repositorio con un archivo readme que explica el marco teórico en detalle. Además, hay dos carpetas adicionales para cada principio, una con un problema y otra con la solución correspondiente, ambas con sus respectivos readme que detallan las ventajas de aplicar dicho principio y las desventajas de no hacerlo.
 
 Considero que aprender los fundamentos de los principios **SOLID** es esencial para el desarrollo de nuestra carrera como programadores. Aunque se les llama principios y son definidos por **Robert C. Martin** como proposiciones o verdades fundamentales que rigen el diseño de software, creo que en una profesión tan dinámica como la programación, donde los avances son constantes, es prudente considerarlos como prácticas comunes con un amplio consenso en el sector. Nuestro trabajo como programadores y desarrolladores también implica una investigación constante que nos permita encontrar nuevas soluciones. **Robert C. Martin** no declaró el fin de la historia con estos principios, sino que nos proporcionó una herramienta adicional para resolver de manera eficiente los problemas comunes en nuestras tareas cotidianas en el mundo del desarrollo.
 
 ## Criticas
-A pesar de que los principios SOLID han sido ampliamente aceptados y utilizados como guías para el diseño de software, también han sido objeto de algunas críticas y debates en la comunidad técnica y profesional. No voy a extenderme sobre las criticas de cada principio, ya que no es el objetivo de este repositorio, pero si voy a dejar una lista de las críticas más comunes para que el que le interese pueda investigarlas y leerlas.
+A pesar de que los principios **SOLID** han sido ampliamente aceptados y utilizados como guías para el diseño de software, también han sido objeto de algunas críticas y debates en la comunidad técnica y profesional. No voy a extenderme sobre las criticas de cada principio, ya que no es el objetivo de este repositorio, pero si voy a dejar una lista de las críticas más comunes para que el que le interese pueda investigarlas y leerlas.
 
 Algunas de las críticas más comunes incluyen:
 
@@ -41,7 +41,7 @@ Algunas de las críticas más comunes incluyen:
 
 **Interfaz segregada excesivamente:** Aplicar el Principio de Segregación de Interfaces (Interface Segregation Principle) de manera extrema puede resultar en muchas interfaces pequeñas y específicas, lo que aumenta la complejidad y dificulta la gestión.
 
-Es importante recordar que los principios SOLID son directrices y no reglas rígidas. Cada proyecto y equipo de desarrollo es diferente, y la aplicación de estos principios debe ser equilibrada según las necesidades y el contexto específico. Algunas críticas pueden surgir de una mala interpretación o aplicación excesiva de los principios, por lo que es esencial considerar el contexto y el juicio profesional al aplicarlos.
+Es importante recordar que los principios **SOLID** son directrices y no reglas rígidas. Cada proyecto y equipo de desarrollo es diferente, y la aplicación de estos principios debe ser equilibrada según las necesidades y el contexto específico. Algunas críticas pueden surgir de una mala interpretación o aplicación excesiva de los principios, por lo que es esencial considerar el contexto y el juicio profesional al aplicarlos.
 
 ## Descripición de cada principio.
 
