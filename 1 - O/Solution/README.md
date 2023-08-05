@@ -70,7 +70,7 @@ La creación de clases separadas para cada tipo de informe mejora la modularidad
 
 Al tener clases separadas para cada tipo de informe, podemos implementar la lógica de generación específica para cada informe de una manera más clara y organizada. Por ejemplo, si la generación de informes **PDF** requiere un enfoque diferente de la generación de informes **Excel**, tener clases separadas nos permite manejar esas diferencias de manera más estructurada y evitar mezclar lógicas que no son relevantes.
 
-### ReportingService.cs::
+### ReportingService.cs:
 El OCP establece que un componente de software debe estar abierto para la extensión pero cerrado para la modificación. Al depender de la interfaz **IReportGenerator** en lugar de realizar verificaciones condicionales para cada tipo de informe, la clase **ReportingService** se vuelve más abierta para la extensión. Siempre que tengamos una nueva clase que implemente **IReportGenerator** para un nuevo tipo de informe, podemos utilizarla directamente en la clase **ReportingServices** sin necesidad de cambiar el código existente. Esto facilita la adición de nuevos tipos de informes y evita la necesidad de modificar la clase principal, lo que mejora la flexibilidad del código.
 
  ```csharp
