@@ -31,9 +31,9 @@ A pesar de que los principios **SOLID** han sido ampliamente aceptados y utiliza
 
 Algunas de las críticas más comunes incluyen:
 
-**Sobrediseño (Over-engineering):** Aplicar los principios SOLID de manera excesiva puede llevar a una mayor complejidad y costos innecesarios, especialmente en proyectos pequeños o de corta duración.
+**Sobrediseño:** Aplicar los principios SOLID de manera excesiva puede llevar a una mayor complejidad y costos innecesarios, especialmente en proyectos pequeños o de corta duración.
 
-**Rigidez (Rigidity):** Interpretaciones estrictas del principio "cerrado para modificación" (Open/Closed Principle) pueden resultar en estructuras complejas que dificultan la incorporación de cambios reales.
+**Rigidez:** Interpretaciones estrictas del principio "cerrado para modificación" (Open/Closed Principle) pueden resultar en estructuras complejas que dificultan la incorporación de cambios reales.
 
 **Dificultad para aprender:** Para los desarrolladores menos experimentados, aplicar los principios SOLID puede ser un desafío y aumentar la curva de aprendizaje, llevando a diseños innecesariamente complejos o malinterpretaciones de los principios.
 
