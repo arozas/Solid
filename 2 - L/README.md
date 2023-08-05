@@ -19,7 +19,7 @@ Aunque este principio puede ser complicado de asimilar, en muchos sentidos, es s
 Aplicar este principio ayuda a evitar consecuencias inesperadas de los cambios y evita la necesidad de modificar una clase cerrada para realizar cambios. Conduce a extensiones fáciles del software y, aunque pueda ralentizar el proceso de desarrollo, seguir este principio durante el desarrollo puede prevenir muchos problemas durante las actualizaciones y extensiones.
 
 ## Tabla de Contenidos
-- [La necesidad del OCP](#la-necesidad-del-ocp)
+- [La necesidad del LSP](#la-necesidad-del-lsp)
 - [Extensión](#extensión)
 - [Cerrado para modificación](#cerrado-para-modificación)  
 - [Abierto para extensión](#abierto-para-extensión)
@@ -27,35 +27,30 @@ Aplicar este principio ayuda a evitar consecuencias inesperadas de los cambios y
 - [El principio OCP se puede entender y aplicar mediante los siguientes puntos](#el-principio-ocp-se-puede-entender-y-aplicar-mediante-los-siguientes-puntos)
 - [Conclusión](#conclusión)
 
-## La necesidad del OCP
+## La necesidad del LSP.
 
-La necesidad del Principio de Abierto-Cerrado (OCP) radica en la búsqueda de un diseño de software que sea altamente flexible, escalable, mantenible y resistente a cambios. Para entender por qué el OCP es necesario, consideremos los siguientes puntos:
+La necesidad del Principio de Sustitución de Liskov (LSP) surge debido a los desafíos inherentes que enfrentamos al diseñar jerarquías de clases en programación orientada a objetos. El LSP nos proporciona una serie de beneficios y garantías que son fundamentales para desarrollar software robusto y mantenible. A continuación, se detallan algunas de las razones que respaldan la necesidad del LSP:
 
-1. **Cambio constante en los requisitos:**
-   Los sistemas de software a menudo enfrentan cambios en los requisitos debido a evoluciones en el negocio, nuevas características solicitadas por los usuarios, correcciones de errores, adaptaciones a tecnologías emergentes, entre otros. Si el software no está diseñado con el OCP en mente, cada cambio en los requisitos podría requerir modificaciones en el código existente, lo que aumenta el riesgo de introducir errores y provoca un código más difícil de mantener.
+1. **Consistencia en la jerarquía de clases:**
+El LSP garantiza que las subclases sean coherentes y consistentes con la clase base. Si todas las subclases siguen el mismo contrato definido por la clase base, el comportamiento esperado es más predecible y fácil de mantener. Sin esta consistencia, sería complicado trabajar con diferentes clases en una jerarquía y podría llevar a resultados inesperados o errores difíciles de depurar.
 
+2. **Polimorfismo y abstracción:**
+El polimorfismo es una característica esencial de la programación orientada a objetos que nos permite tratar objetos de diferentes clases de manera uniforme, siempre y cuando cumplan con un contrato común (interfaz). El LSP es crucial para asegurar que el polimorfismo funcione correctamente, ya que garantiza que las subclases puedan ser usadas en lugar de la clase base sin comprometer la funcionalidad y sin afectar el comportamiento del código que depende de la clase base.
 
-2. **Mantenibilidad a largo plazo:**
-   Los sistemas de software tienen ciclos de vida prolongados. Después de la fase inicial de desarrollo, la mayoría del tiempo y los recursos se destinan a su mantenimiento y mejora continua. Un diseño que no sigue el OCP puede resultar en un código monolítico difícil de entender y modificar, lo que ralentiza el proceso de mantenimiento y aumenta los costos a lo largo del tiempo..
+3. **Reutilización de código:**
+Un objetivo importante del diseño orientado a objetos es la reutilización de código. Cuando las subclases cumplen con el LSP, pueden aprovechar el código de la clase base para realizar tareas comunes, lo que conduce a un código más limpio y eficiente. Si las subclases no siguen el LSP, es más difícil reutilizar el código y puede requerir una duplicación innecesaria, lo que a su vez aumenta la complejidad y el mantenimiento del código.
 
+4. **Seguridad en la evolución del software:**
+El software es una entidad en constante evolución, y las clases pueden ser extendidas o modificadas para satisfacer nuevos requisitos. Cuando se sigue el LSP, se puede estar seguro de que cualquier cambio en una subclase no afectará el funcionamiento de otras partes del programa que dependen de la clase base. Esto mejora la seguridad en la evolución del software y facilita la introducción de mejoras sin introducir errores inesperados.
 
-3. **Evitar efectos secundarios indeseados:**
-   Cuando se modifican directamente componentes de software existentes, es posible que se generen efectos secundarios no deseados en otras partes del sistema que dependen de esos componentes. Estos efectos secundarios pueden conducir a comportamientos inesperados y difíciles de rastrear, lo que complica la corrección de errores y la implementación de nuevas funcionalidades.
+5. **Facilita el trabajo en equipo:**
+En proyectos de desarrollo de software, varios desarrolladores pueden trabajar simultáneamente en diferentes partes del código. Si todos siguen el LSP, pueden colaborar con mayor facilidad, ya que cada subclase se comporta de manera predecible y se puede confiar en que seguirán el contrato establecido por la clase base. Esto reduce los conflictos y las posibilidades de que se introduzcan errores en el código debido a inconsistencias.
 
-
-4. **Reutilización de código:**
-   El OCP promueve la reutilización de código existente a través de la extensión en lugar de la modificación. Cuando el software está diseñado con este principio en mente, las funcionalidades pueden ser extendidas mediante la creación de nuevas clases o módulos que se ajusten a interfaces existentes. Esto evita duplicar código y promueve un diseño modular y cohesivo..
-
-
-5. **Trabajo en equipo y colaboración:**
-   En proyectos de desarrollo de software, varios desarrolladores pueden estar trabajando en diferentes partes del sistema simultáneamente. Si cada desarrollador puede modificar directamente el código existente sin seguir el OCP, es probable que haya conflictos y problemas de integración. En cambio, al adherirse al OCP y trabajar a través de interfaces y extensiones, se reduce la interferencia entre desarrolladores y se facilita el trabajo en equipo.
-
-
-6. **Adopción de nuevas tecnologías:**
-   Con el avance tecnológico, es posible que el software deba adaptarse a nuevas plataformas, bibliotecas o enfoques de desarrollo. Un diseño que sigue el OCP permite la incorporación de nuevas tecnologías sin cambiar el código existente, lo que facilita la actualización y modernización del sistema.
+6. **Pruebas unitarias más robustas:**
+El LSP facilita la creación de pruebas unitarias más efectivas y robustas. Cuando las subclases siguen el contrato de la clase base, las pruebas diseñadas para la clase base pueden aplicarse automáticamente a todas las subclases. Esto ahorra tiempo en la creación de pruebas redundantes y garantiza que se cubra adecuadamente el comportamiento esperado en todos los casos.
 
 ### Resumen:
-El OCP es necesario para enfrentar los desafíos del desarrollo de software en un mundo en constante cambio. Al seguir este principio, los equipos de desarrollo pueden crear sistemas más adaptables, fáciles de mantener, menos propensos a errores y más adecuados para enfrentar los desafíos futuros, lo que resulta en un software de mayor calidad y éxito a largo plazo..
+El Principio de Sustitución de Liskov es esencial para garantizar un diseño de software coherente, seguro y mantenible. Cumplir con el LSP proporciona beneficios como el polimorfismo efectivo, la reutilización de código, la consistencia en la jerarquía de clases y la facilidad de evolución del software. Es una herramienta poderosa para los diseñadores y desarrolladores de software que buscan construir sistemas sólidos y fiables.
 
 ## Extensión
 
