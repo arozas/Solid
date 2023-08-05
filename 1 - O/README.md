@@ -151,7 +151,7 @@ Una de las principales técnicas para lograr el OCP es utilizar interfaces y abs
 ### Empleo de patrones de diseño:
 La aplicación de patrones de diseño también puede facilitar el cumplimiento del OCP. Por ejemplo, el patrón Strategy permite cambiar el comportamiento de un objeto en tiempo de ejecución mediante la sustitución de estrategias. De esta manera, se pueden agregar nuevas estrategias sin modificar el código existente, lo que favorece la extensibilidad.
 
-### Separación de preocupaciones:
+### Separación de responsabilidades:
 Otra técnica para adherirse al OCP es dividir las responsabilidades y funcionalidades en clases o módulos cohesivos y separados. Al mantener cada clase enfocada en una única responsabilidad, se puede extender el sistema agregando nuevas clases o módulos sin afectar los existentes. La separación de preocupaciones reduce la posibilidad de cambios no deseados y efectos secundarios.
 
 ### Utilización de herencia y polimorfismo:
